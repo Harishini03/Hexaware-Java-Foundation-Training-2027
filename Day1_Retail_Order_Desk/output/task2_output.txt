@@ -1,0 +1,10 @@
+========== TASK 2: SORTING ==========
+Records sorted: 10
+Bubble sort O(n^2): 28152 ns
+Merge sort O(n log n): 32418 ns
+Built-in sort: 1102586 ns
+Top 3 orders by amount:
+Order ID: 1006, Customer ID: 505, Amount: 1200.00, Created At: 2026-10-29T10:19
+Order ID: 1002, Customer ID: 502, Amount: 899.00, Created At: 2026-10-29T10:16:20
+Order ID: 1010, Customer ID: 509, Amount: 560.00, Created At: 2026-10-29T10:23:30
+Bubble sort first three passes are described in notes/notes.md.
