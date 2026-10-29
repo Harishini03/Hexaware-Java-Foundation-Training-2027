@@ -1,0 +1,4 @@
+========== TASK 3: DUPLICATES ==========
+Possible duplicate: order 1003 matches order 1001
+Possible duplicate count: 1
+Time complexity: O(n) average; space complexity: O(n).
