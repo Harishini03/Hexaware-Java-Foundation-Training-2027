@@ -1,0 +1,7 @@
+========== TASK 4: STACK AND QUEUE ==========
+Custom stack undo: Change order quantity
+Built-in stack undo: Change order quantity
+Custom queue dispatch: 1001
+Built-in queue dispatch: 1001
+Stack push/pop: O(1) for both implementations here.
+Custom queue dequeue is O(n) because it removes index 0; ArrayDeque queue operations are O(1) amortized.
