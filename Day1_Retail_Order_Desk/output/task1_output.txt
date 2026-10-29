@@ -1,0 +1,8 @@
+========== TASK 1: SEARCH ==========
+Linear Search: Order found
+Order ID: 1006, Customer ID: 505, Amount: 1200.00, Created At: 2026-10-29T10:19
+Binary Search: Order found
+Order ID: 1006, Customer ID: 505, Amount: 1200.00, Created At: 2026-10-29T10:19
+Linear search time: 12809 ns
+Binary search time (excluding sorting): 3465 ns
+Note: binary search needs sorted IDs; sorting cost is O(n log n).
