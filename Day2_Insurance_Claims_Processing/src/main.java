@@ -1,10 +1,5 @@
 import java.util.*;
 
-/*
- * Day 2 - Set 2: Insurance Claims Processing
- * Beginner-friendly implementation of BST, hashing, graphs,
- * sliding window, and two pointers.
- */
 public class main {
 
     public static void main(String[] args) {
