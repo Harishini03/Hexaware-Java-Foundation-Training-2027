@@ -1,0 +1,16 @@
+Issue Type,Summary,Description,Priority,Story Points,Epic Name,Epic Link
+Epic,Browse and Search,"Help customers discover grocery products.",,,"Browse and Search",
+Epic,Cart and Checkout,"Help customers prepare and place an order.",,,"Cart and Checkout",
+Epic,Delivery Tracking,"Help customers understand order progress and delivery.",,,"Delivery Tracking",
+Story,"GROC-01 View grocery categories","As a customer, I want to view the grocery categories so that I can find products by type. Acceptance: catalogue displays available categories.",Highest,3,,"Browse and Search"
+Story,"GROC-02 View product details","As a customer, I want to view a product's name, price and availability so that I can decide whether to buy it. Acceptance: product details show name, price and availability.",Highest,2,,"Browse and Search"
+Story,"GROC-03 Search by product name","As a customer, I want to search for a product by its name so that I can find it quickly. Acceptance: matching products are displayed; no-match message is shown.",Highest,3,,"Browse and Search"
+Story,"GROC-04 Filter by category","As a customer, I want to filter products by category so that I can narrow the displayed products. Acceptance: only products in the selected category are displayed.",Medium,5,,"Browse and Search"
+Story,"GROC-05 Add available product to cart","As a customer, I want to add an available product to my cart so that I can collect items for one order. Acceptance: available item is added; unavailable item is rejected with a message.",Highest,3,,"Cart and Checkout"
+Story,"GROC-06 Change cart quantity","As a customer, I want to change the quantity of a cart item so that I can order the amount I need. Acceptance: cart quantity and item total are updated; quantity cannot exceed available stock.",Highest,5,,"Cart and Checkout"
+Story,"GROC-07 Remove cart item","As a customer, I want to remove an item from my cart so that I can correct my order before checkout. Acceptance: selected item is removed and cart total is recalculated.",Highest,3,,"Cart and Checkout"
+Story,"GROC-08 Review order amount","As a customer, I want to review the item total and delivery fee before placing an order so that I know the amount payable. Acceptance: item total, delivery fee and final amount are displayed.",Highest,5,,"Cart and Checkout"
+Story,"GROC-09 Choose delivery address","As a customer, I want to choose an available delivery address for my order so that it is sent to the correct place. Acceptance: selected address is attached to the order.",Highest,3,,"Delivery Tracking"
+Story,"GROC-10 Receive order confirmation","As a customer, I want to receive an order confirmation after checkout so that I know my order was placed. Acceptance: confirmation is shown after successful order placement.",Medium,5,,"Delivery Tracking"
+Story,"GROC-11 View order status","As a customer, I want to view the current order status so that I know whether my order is being prepared or delivered. Acceptance: latest order status is visible.",Medium,2,,"Delivery Tracking"
+Story,"GROC-12 View estimated delivery window","As a customer, I want to see the estimated delivery window so that I can plan to receive the order. Acceptance: estimated delivery window is displayed when available.",Low,3,,"Delivery Tracking"
