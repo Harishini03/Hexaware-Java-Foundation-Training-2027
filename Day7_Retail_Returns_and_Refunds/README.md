@@ -1,18 +1,33 @@
-# Day 7 – Retail Returns and Refunds (MySQL 8.4)
+# Day 7 – Retail Returns and Refunds
 
-**Selected assignment:** Set 3 – Retail Returns and Refunds.
+**Selected assignment:** Set 3 – Retail Returns and Refunds  
+**Database:** MySQL 8.4  
+**Scenario:** Analyse product returns, customer refunds and store operations
 
-## Scenario
-Analyse product returns, customer refund status, store refund values and employee reporting relationships using the shared retail operations database created for Day 6.
+## Objective
+Use retail transaction data to answer business questions about returned products, refund status and refund values. The exercises also demonstrate employee reporting relationships and different ways to express conditions using joins and subqueries.
 
-## Deliverables
-- `advanced_reports.sql` – ten business questions plus NULL-safe NOT EXISTS, ANY, ALL and nested-subquery demonstrations.
-- `join_and_subquery_notes.md` – join-choice table and explanations of subquery behaviour.
+## Files in this folder
+| File | Purpose |
+|---|---|
+| `advanced_reports.sql` | Business-report queries using joins, IN, EXISTS, NOT EXISTS, ANY, ALL and nested subqueries |
+| `join_and_subquery_notes.md` | Explains the join choices, subquery patterns, NULL-related behaviour and expected sample-result checks |
 
-## Run order
-1. Complete Day 5 setup and seed data.
-2. Run Day 6 `setup.sql` and `seed_data.sql`.
-3. Run `advanced_reports.sql`.
-4. Read `join_and_subquery_notes.md` and capture query outputs in MySQL Workbench.
+## Prerequisites
+This folder uses the retail tables and sample records created for Day 6. Complete the following before running Day 7:
 
-The Day 7 scripts reuse the Day 6 sample dataset; do not create a second copy of the shared tables.
+1. In `Day5_Retail_Inventory_Management`, execute `schema.sql` and `seed_data.sql`.
+2. In `Day6_Retail_Sales_Reporting`, execute `setup.sql` and then `seed_data.sql`.
+
+Do not create another copy of the shared tables. Run all scripts against the same MySQL database.
+
+## How to run
+1. Open `advanced_reports.sql` in MySQL Workbench.
+2. Execute the queries and inspect each result.
+3. Read `join_and_subquery_notes.md` to understand why each join or subquery is used.
+4. Capture your actual query result grids for assignment evidence.
+
+## Important notes
+- The `NOT IN` condition can behave unexpectedly when its subquery returns NULL. The notes explain the NULL-safe alternative using `NOT EXISTS`.
+- The SQL files contain query examples; execute them after the prerequisites have created and populated the required tables.
+- Expected-result descriptions are guidance, not proof of live execution.
