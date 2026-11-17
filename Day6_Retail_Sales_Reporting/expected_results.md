@@ -28,3 +28,15 @@ Run `setup.sql`, `seed_data.sql`, and then `reports.sql` in that order. The expe
 - **COALESCE(expression, 0):** displays zero when the expression evaluates to NULL.
 - **LEFT JOIN:** preserves every row from the left table, allowing Q5 and Q6 to find missing related records.
 - **DATE_FORMAT, UPPER, CONCAT and ROUND:** format dates, names, labels and numeric output for reports.
+
+## Key values from the supplied sample data
+
+- **Q1 top five:** SKU001 – 5593.00; SKU005 – 5499.00; SKU007 – 4998.00; SKU003 – 2598.00; SKU006 – 2097.00.
+- **Q2 monthly revenue:** January 2026 – 4254.00; February 2026 – 6591.00; March 2026 – 12991.00; April 2026 – 2499.00.
+- **Q3:** Aarav Kumar has five orders and is the only customer above three orders.
+- **Q4:** Coimbatore average basket value is 1462.50 across four completed orders; Chennai is 1597.50 across two completed orders.
+- **Q5:** Order 1012 has no payment record.
+- **Q6:** Tara M (customer 10) has no orders.
+- **Q8:** 21 March 2026 has the highest daily revenue in the sample (5499.00).
+
+These values are calculated from the included sample rows and are intended as checks when you run the SQL. The exact display format may differ by MySQL Workbench settings.
