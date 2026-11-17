@@ -1,27 +1,33 @@
-# Day 5 – Retail Inventory Management (MySQL 8.4)
+# Day 5 – Retail Inventory Management
 
-**Selected assignment:** Set 1 – Retail Inventory Management.
+**Selected assignment:** Set 1 – Retail Inventory Management  
+**Database:** MySQL 8.4  
+**Storage engine:** InnoDB
 
-## Scenario
-A retailer originally stores SKU, product name, category, supplier name, supplier phone, warehouse, quantity and reorder level in one spreadsheet. This solution separates the data into related tables and normalises the design to 3NF.
+## Objective
+Design a relational database for a retailer that previously maintained product, supplier and warehouse information in one spreadsheet. The solution separates the data into related tables and demonstrates keys, constraints, referential integrity and normalisation up to 3NF.
 
-## Deliverables
-- `schema.sql` – database, InnoDB tables, keys, constraints and referential actions.
-- `seed_data.sql` – 10 rows in each table.
-- `er_diagram.md` – ER diagram and relationship explanation.
-- `normalisation.md` – 1NF, 2NF, 3NF and anomalies.
-- `failing_inserts.sql` – four intentional constraint violations.
-- `failing_insert_evidence.md` – expected MySQL errors and how to capture actual evidence.
-- `operations_and_checks.sql` – UPDATE, DELETE, before/after SELECTs and system-database inspection.
+## Files in this folder
+| File | Purpose |
+|---|---|
+| `schema.sql` | Creates the database and tables with primary keys, foreign keys, constraints and referential actions |
+| `seed_data.sql` | Inserts the sample records |
+| `er_diagram.md` | ER diagram and explanation of table relationships |
+| `normalisation.md` | 1NF, 2NF, 3NF and update/insert/delete anomalies |
+| `operations_and_checks.sql` | UPDATE, DELETE, verification queries and system-database inspection |
+| `failing_inserts.sql` | Four intentional examples of constraint violations |
+| `failing_insert_evidence.md` | Expected errors and instructions for capturing actual MySQL evidence |
 
-## Run in MySQL 8.4
-Run these in order:
+## How to run
+Run the scripts in MySQL Workbench or the MySQL command-line client, in this order:
+
 1. Open and execute `schema.sql`.
 2. Execute `seed_data.sql`.
-3. Execute `operations_and_checks.sql` (the UPDATE/DELETE demonstration changes the sample data).
-4. Run each statement in `failing_inserts.sql` separately to observe its expected error.
+3. Execute `operations_and_checks.sql`.
+4. Execute each statement in `failing_inserts.sql` separately to observe the expected constraint errors.
 
-You can use MySQL Workbench or the MySQL command-line client. The failing statements are intentionally invalid; do not mix them into the normal seed script.
-
-## Important
-The SQL is written for MySQL 8.4. The error messages listed in `failing_insert_evidence.md` are expected MySQL error codes/messages based on the constraints; they are not represented as screenshots or as a claim that the statements were executed on a live MySQL server.
+## Important notes
+- This folder is the starting point for the retail database used in this assignment.
+- The UPDATE and DELETE examples change sample records. Re-run the schema and seed scripts if you need a fresh copy of the original data.
+- The statements in `failing_inserts.sql` are deliberately invalid. Run them separately, not as part of the normal setup.
+- Error descriptions in the evidence notes explain the expected behaviour; capture your own result grids and error messages from MySQL Workbench for submission.
