@@ -1,6 +1,18 @@
 -- Sample data for Days 6-8. Run after setup.sql.
 USE retail_inventory;
 
+-- Additional products create multiple SKUs in the Electronics and Grocery
+-- categories so Day 8's category-average stock query returns meaningful rows.
+INSERT INTO product (sku,product_name,category_id,supplier_id) VALUES
+('SKU011','Bluetooth Speaker',1,1),
+('SKU012','Basmati Rice 1kg',2,2)
+ON DUPLICATE KEY UPDATE product_name=VALUES(product_name);
+
+INSERT INTO inventory (sku,warehouse_id,quantity,reorder_level) VALUES
+('SKU011',1,5,8),
+('SKU012',2,3,10)
+ON DUPLICATE KEY UPDATE quantity=VALUES(quantity),reorder_level=VALUES(reorder_level);
+
 INSERT INTO customer (customer_id,customer_name,city,email,birth_date) VALUES
 (1,'Aarav Kumar','Coimbatore','aarav@example.com','1995-04-12'),
 (2,'Diya Raman','Chennai','diya@example.com','1998-08-21'),
@@ -36,7 +48,8 @@ ON DUPLICATE KEY UPDATE employee_name=VALUES(employee_name);
 INSERT INTO product_pricing (sku,unit_price) VALUES
 ('SKU001',799.00),('SKU002',499.00),('SKU003',1299.00),
 ('SKU004',120.00),('SKU005',5499.00),('SKU006',699.00),
-('SKU007',2499.00),('SKU008',199.00),('SKU009',899.00)
+('SKU007',2499.00),('SKU008',199.00),('SKU009',899.00),
+('SKU011',1899.00),('SKU012',149.00)
 ON DUPLICATE KEY UPDATE unit_price=VALUES(unit_price);
 
 INSERT INTO sales_order (order_id,customer_id,store_id,employee_id,order_date,order_status) VALUES
