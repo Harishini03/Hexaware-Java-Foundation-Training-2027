@@ -1,20 +1,36 @@
-# Day 6 – Retail Sales Reporting (MySQL 8.4)
+# Day 6 – Retail Sales Reporting
 
-**Selected assignment:** Set 1 – Retail Sales Reporting.
+**Selected assignment:** Set 1 – Retail Sales Reporting  
+**Database:** MySQL 8.4  
+**Scenario:** Retail sales and reporting
 
-## Business scenario
-The retail sales team needs daily and monthly reporting from customers, products, orders, order items and payments. This solution uses the Day 5 `retail_inventory` database and extends it with sales and customer data.
+## Objective
+Prepare useful sales reports from customer, product, order, order-item and payment information. The queries demonstrate aggregate functions, grouping, filtering grouped results, joins and handling of NULL values.
 
-## Deliverables
-- `setup.sql` – creates customers, stores, employees, product prices, sales orders, order items, payments, returns and refunds.
-- `seed_data.sql` – inserts reproducible sample data for Days 6–8.
-- `reports.sql` – eight required sales reports plus NULL behaviour and WHERE/HAVING demonstrations.
-- `expected_results.md` – purpose and expected result structure for every report.
+## Files in this folder
+| File | Purpose |
+|---|---|
+| `setup.sql` | Creates the customer, store, employee, product-pricing, sales-order, order-item, payment, return and refund tables |
+| `seed_data.sql` | Inserts reproducible sample data used by the Day 6, Day 7 and Day 8 SQL exercises |
+| `reports.sql` | Contains the sales-report queries, aggregate calculations, joins and WHERE/HAVING/NULL demonstrations |
+| `expected_results.md` | Explains each report and describes the expected result structure and key sample values |
 
-## Run order
-1. Run the Day 5 `schema.sql` and `seed_data.sql`.
-2. Run `setup.sql`.
-3. Run `seed_data.sql`.
-4. Run `reports.sql`.
+## Prerequisite
+The Day 6 setup extends the `retail_inventory` database created for Day 5. Before running this folder, complete the following from `Day5_Retail_Inventory_Management`:
 
-Use MySQL Workbench or the MySQL command-line client. The setup and sample inserts use InnoDB and are designed for MySQL 8.4.
+1. Execute `schema.sql`.
+2. Execute `seed_data.sql`.
+
+## How to run
+From this folder, execute these files in order:
+
+1. `setup.sql`
+2. `seed_data.sql`
+3. `reports.sql`
+
+Use MySQL Workbench or the MySQL command-line client. The scripts use InnoDB and are written for MySQL 8.4.
+
+## Important notes
+- Run the setup and seed scripts in the same MySQL schema/session environment.
+- The Day 6 sample data is also used by the Day 7 returns/refunds queries and Day 8 inventory-reservation and ranking exercises. Do not create duplicate copies of these tables for those days.
+- Read `expected_results.md` alongside the query output. It describes expected results but is not a substitute for screenshots of your own execution.
