@@ -85,6 +85,17 @@ WHERE NOT EXISTS (
 )
 ORDER BY p.sku;
 
+-- IN demonstration: customers who have at least one returned order item.
+SELECT customer_id,customer_name
+FROM customer
+WHERE customer_id IN (
+    SELECT so.customer_id
+    FROM sales_order so
+    JOIN order_item oi ON oi.order_id=so.order_id
+    JOIN sales_return sr ON sr.order_item_id=oi.order_item_id
+)
+ORDER BY customer_id;
+
 -- Q9. Stores whose processed refund total is greater than ANY processed refund total
 -- from a different store in the same region.
 WITH store_refunds AS (
