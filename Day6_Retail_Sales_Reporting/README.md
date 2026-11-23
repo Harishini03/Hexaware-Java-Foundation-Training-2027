@@ -32,5 +32,5 @@ Use MySQL Workbench or the MySQL command-line client. The scripts use InnoDB and
 
 ## Important notes
 - Run the setup and seed scripts in the same MySQL schema/session environment.
-- The Day 6 sample data is also used by the Day 7 returns/refunds queries and Day 8 inventory-reservation and ranking exercises. Do not create duplicate copies of these tables for those days.
-- Read `expected_results.md` alongside the query output. It describes expected results but is not a substitute for screenshots of your own execution.
+- The Day 6 sample data is also used by the Day 7 returns/refunds queries and Day 8 inventory-reservation and ranking exercises. Do not create duplicate copies of these tables.
+- Read `expected_results.md` alongside the query output. It describes expected results and key sample values.
