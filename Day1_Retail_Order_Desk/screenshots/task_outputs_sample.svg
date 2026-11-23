@@ -1,7 +1,7 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1100" height="650" viewBox="0 0 1100 650">
- <rect width="1100" height="650" fill="#f4f6f8"/><rect x="0" y="0" width="1100" height="48" fill="#f1f3f4"/><line x1="0" y1="47.5" x2="1100" y2="47.5" stroke="#c9ced3"/>
+ <rect width="1100" height="650" fill="#f4f6f8"/><rect x="0" y="0" width="1100" height="48" fill="#f7f8fa"/><line x1="0" y1="47.5" x2="1100" y2="47.5" stroke="#c9ced3"/>
  
- <text x="28" y="30" class="bar">JAVA CONSOLE OUTPUT</text><text x="28" y="82" class="title">DAY 1 · RETAIL ORDER DESK</text>
+ <g transform="translate(17 14)"><rect width="18" height="18" rx="2" fill="#1677d2"/><path d="M3 3h5v5H3zm7 0h5v5h-5zM3 10h5v5H3zm7 0h5v5h-5z" fill="#fff"/></g><text x="45" y="30" class="bar">JAVA CONSOLE OUTPUT</text><text x="28" y="82" class="title">DAY 1 · RETAIL ORDER DESK</text>
  <rect x="28" y="100" width="1044" height="270" rx="7" fill="#fff" stroke="#cbd3da"/>
  <rect x="28" y="100" width="1044" height="34" rx="7" fill="#e8edf1"/><text x="46" y="123" class="tab">SQL EDITOR / TASK OUTPUT</text>
  <text x="350" y="150" class="comment">TASK 1 — SEARCH</text><text x="350" y="177" class="code">Linear Search: Order 1006 found</text><text x="350" y="204" class="code">Binary Search: Order 1006 found</text><text x="350" y="231" class="code">TASK 2 — SORTING</text><text x="350" y="258" class="code">Records sorted: 10</text><text x="350" y="285" class="code">Top order: #1006 · ₹1,200.00</text><text x="350" y="312" class="code">TASK 3 — DUPLICATES</text><text x="350" y="339" class="code">Possible duplicate: order 1003 matches 1001</text><text x="350" y="366" class="code">TASK 4 — STACK &amp; QUEUE</text><text x="350" y="393" class="code">Undo: Change order quantity · Dispatch: 1001</text><text x="350" y="420" class="code">TASK 5 — REFUND</text><text x="350" y="447" class="code">Greedy: 3 coins · Dynamic Programming: 2 coins</text>
@@ -11,7 +11,7 @@
  <text x="44" y="444" class="head">Task</text><text x="340" y="444" class="head">Observed result</text><text x="650" y="444" class="head">1 · Search</text><text x="44" y="471" class="cell">Order 1006 found by both searches</text><text x="340" y="471" class="cell">2 · Sorting</text><text x="650" y="471" class="cell">Top 3 orders selected by amount</text><text x="44" y="498" class="cell">3 · Duplicate check</text><text x="340" y="498" class="cell">1 possible duplicate detected</text><text x="650" y="498" class="cell">4 · Stack / Queue</text><text x="44" y="525" class="cell">Undo and dispatch operations completed</text><text x="340" y="525" class="cell">5 · Refund</text><text x="650" y="525" class="cell">DP finds 2 coins for amount 6</text>
  <rect x="824" y="68" width="248" height="26" rx="13" fill="#fff1d6" stroke="#d6a94e"/>
  <text x="948" y="86" text-anchor="middle" class="sample">ILLUSTRATIVE SAMPLE · NOT EXECUTED</text>
- <text x="28" y="635" class="foot">Training reference only · Values shown are illustrative and are not a captured local execution result.</text>
+ <text x="28" y="635" class="foot">Windows-style interface sample · Values are illustrative, not captured from local execution.</text>
  <g fill="none" stroke="#46515a" stroke-width="1.2"><path d="M1000 24h14"/><rect x="1030" y="17" width="12" height="12" rx="1"/><path d="M1064 17l12 12m0-12l-12 12" stroke="#b44b4b"/></g>
  <style>
  .bar{font:600 13px Arial,sans-serif;fill:#263746;letter-spacing:.3px}.title{font:700 22px Arial,sans-serif;fill:#253746}
