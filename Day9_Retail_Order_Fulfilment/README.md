@@ -45,7 +45,7 @@ Each SQL file sets the required database and has its own delimiter statements. R
 - The insufficient-stock procedure call is intentionally expected to fail and roll back. Run it separately so you can see the error, then verify that no partial order or stock deduction remains.
 - The successful order example uses SKU001 in warehouse 1. The Day 5 sample data provides 40 units initially.
 - The cursor and set-based examples each insert follow-up rows. Clear the demonstration rows between the two tests if you want to compare row counts fairly.
-- The scripts are written for MySQL 8.4. They have not been executed against your local Workbench instance; run them in the stated order and capture your own result-grid screenshots for submission.
+- The scripts are written for MySQL 8.4 but have not been executed against a local Workbench instance.
 
 ## Expected learning outcome
 You should be able to explain how a view hides columns, how a transaction protects stock, why a procedure uses an OUT parameter, how a cursor reaches the end of its result set, and why a set-based statement is usually simpler for bulk work.
