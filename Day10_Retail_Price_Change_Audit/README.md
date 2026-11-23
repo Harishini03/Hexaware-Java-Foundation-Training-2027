@@ -39,12 +39,4 @@ Keep a record of product price changes and prevent a selling price from being lo
 - MySQL executes the trigger once for each affected row.
 - With InnoDB, a failing row-level trigger causes the failing statement to fail; rows changed by that statement are rolled back as part of statement atomicity.
 
-## Submission evidence
-Capture your own Workbench screenshots showing:
-- Trigger creation completed.
-- One valid price update and its audit row.
-- A valid multi-row update and the corresponding audit rows.
-- The expected error for a below-cost update.
-- Both triggers listed from `information_schema.TRIGGERS`.
-
-The SQL is prepared for MySQL 8.4 but has not been run on your local database. Do not use sample output as proof of a local execution.
+The SQL is prepared for MySQL 8.4 but has not been run on a local database.
