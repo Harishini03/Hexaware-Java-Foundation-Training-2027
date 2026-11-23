@@ -1,7 +1,7 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1100" height="650" viewBox="0 0 1100 650">
- <rect width="1100" height="650" fill="#f4f6f8"/><rect x="0" y="0" width="1100" height="48" fill="#f1f3f4"/><line x1="0" y1="47.5" x2="1100" y2="47.5" stroke="#c9ced3"/>
+ <rect width="1100" height="650" fill="#f4f6f8"/><rect x="0" y="0" width="1100" height="48" fill="#f7f8fa"/><line x1="0" y1="47.5" x2="1100" y2="47.5" stroke="#c9ced3"/>
  
- <text x="28" y="30" class="bar">JAVA CONSOLE OUTPUT</text><text x="28" y="82" class="title">DAY 2 · INSURANCE CLAIMS</text>
+ <g transform="translate(17 14)"><rect width="18" height="18" rx="2" fill="#1677d2"/><path d="M3 3h5v5H3zm7 0h5v5h-5zM3 10h5v5H3zm7 0h5v5h-5z" fill="#fff"/></g><text x="45" y="30" class="bar">JAVA CONSOLE OUTPUT</text><text x="28" y="82" class="title">DAY 2 · INSURANCE CLAIMS</text>
  <rect x="28" y="100" width="1044" height="270" rx="7" fill="#fff" stroke="#cbd3da"/>
  <rect x="28" y="100" width="1044" height="34" rx="7" fill="#e8edf1"/><text x="46" y="123" class="tab">SQL EDITOR / TASK OUTPUT</text>
  <text x="350" y="150" class="comment">TASK 1 — CLAIM ID BST</text><text x="350" y="177" class="code">Inorder: 20 30 40 50 60 70 80</text><text x="350" y="204" class="code">Search 60: Found · Search 99: Not found</text><text x="350" y="231" class="code">TASK 2 — DUPLICATE CLAIMS</text><text x="350" y="258" class="code">Duplicate: policy pol100 · 2026-10-20</text><text x="350" y="285" class="code">TASK 3 — APPROVAL GRAPH</text><text x="350" y="312" class="code">Path: Registration → Assessment → Surveyor → Settlement</text><text x="350" y="339" class="code">Cycle detected after adding reverse edge: true</text><text x="350" y="366" class="code">TASK 4 — CLAIM SPIKE</text><text x="350" y="393" class="code">Longest run above 100: 3 days</text><text x="350" y="420" class="code">TASK 5 — MERGE REGIONAL LISTS</text><text x="350" y="447" class="code">[101, 102, 103, 104, 108, 109, 115, 120]</text>
@@ -11,7 +11,7 @@
  <text x="44" y="444" class="head">Task</text><text x="340" y="444" class="head">Result</text><text x="650" y="444" class="head">BST</text><text x="44" y="471" class="cell">Inorder traversal sorted · Search 60 found</text><text x="340" y="471" class="cell">HashSet</text><text x="650" y="471" class="cell">Duplicate policy/date detected</text><text x="44" y="498" class="cell">BFS / DFS</text><text x="340" y="498" class="cell">Shortest approval path displayed</text><text x="650" y="498" class="cell">Claim analysis</text><text x="44" y="525" class="cell">3 consecutive days above 100</text><text x="340" y="525" class="cell">Two-pointer merge</text><text x="650" y="525" class="cell">Sorted list merged successfully</text>
  <rect x="824" y="68" width="248" height="26" rx="13" fill="#fff1d6" stroke="#d6a94e"/>
  <text x="948" y="86" text-anchor="middle" class="sample">ILLUSTRATIVE SAMPLE · NOT EXECUTED</text>
- <text x="28" y="635" class="foot">Training reference only · Values shown are illustrative and are not a captured local execution result.</text>
+ <text x="28" y="635" class="foot">Windows-style interface sample · Values are illustrative, not captured from local execution.</text>
  <g fill="none" stroke="#46515a" stroke-width="1.2"><path d="M1000 24h14"/><rect x="1030" y="17" width="12" height="12" rx="1"/><path d="M1064 17l12 12m0-12l-12 12" stroke="#b44b4b"/></g>
  <style>
  .bar{font:600 13px Arial,sans-serif;fill:#263746;letter-spacing:.3px}.title{font:700 22px Arial,sans-serif;fill:#253746}
