@@ -30,3 +30,6 @@ Run the scripts in MySQL Workbench or the MySQL command-line client, in this ord
 - This folder is the starting point for the retail database used in this assignment.
 - The UPDATE and DELETE examples change sample records. Re-run the schema and seed scripts if you need a fresh copy of the original data.
 - The statements in `failing_inserts.sql` are deliberately invalid. Run them separately, not as part of the normal setup.
+
+## Outputs
+See [`output.md`](output.md) for the task output and expected result checks.
