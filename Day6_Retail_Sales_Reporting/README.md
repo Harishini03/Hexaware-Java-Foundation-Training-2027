@@ -34,3 +34,21 @@ Use MySQL Workbench or the MySQL command-line client. The scripts use InnoDB and
 - Run the setup and seed scripts in the same MySQL schema/session environment.
 - The Day 6 sample data is also used by the Day 7 returns/refunds queries and Day 8 inventory-reservation and ranking exercises. Do not create duplicate copies of these tables.
 - Read `expected_results.md` alongside the query output. It describes expected results and key sample values.
+
+## Sample Output – Sales Reports
+
+Expected checks from the supplied sample dataset:
+
+| Report | Expected result |
+|---|---|
+| Top five products by revenue | SKU001: ₹5,593.00; SKU005: ₹5,499.00; SKU007: ₹4,998.00; SKU003: ₹2,598.00; SKU006: ₹2,097.00 |
+| Monthly revenue – Jan 2026 | ₹4,254.00 |
+| Monthly revenue – Feb 2026 | ₹6,591.00 |
+| Monthly revenue – Mar 2026 | ₹12,991.00 |
+| Monthly revenue – Apr 2026 | ₹2,499.00 |
+| Customers with more than 3 orders | Aarav Kumar – 5 orders |
+| Order without payment | Order 1012 |
+| Customer without orders | Tara M (customer 10) |
+| Highest-sales day | 21 March 2026 – ₹5,499.00 |
+
+*Expected checks from the supplied seed data, not claimed live execution results. See expected_results.md for query descriptions and NULL-handling examples.*
