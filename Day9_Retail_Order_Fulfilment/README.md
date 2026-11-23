@@ -49,3 +49,6 @@ Each SQL file sets the required database and has its own delimiter statements. R
 
 ## Expected learning outcome
 You should be able to explain how a view hides columns, how a transaction protects stock, why a procedure uses an OUT parameter, how a cursor reaches the end of its result set, and why a set-based statement is usually simpler for bulk work.
+
+## Outputs
+See [`output.md`](output.md) for the task output and expected result checks.
