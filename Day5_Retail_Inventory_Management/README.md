@@ -30,3 +30,27 @@ Run the scripts in MySQL Workbench or the MySQL command-line client, in this ord
 - This folder is the starting point for the retail database used in this assignment.
 - The UPDATE and DELETE examples change sample records. Re-run the schema and seed scripts if you need a fresh copy of the original data.
 - The statements in `failing_inserts.sql` are deliberately invalid. Run them separately, not as part of the normal setup.
+
+## Sample Output – Seed Data Verification
+
+After running the seed script, the verification query should return:
+
+| Table name | Expected row count |
+|---|---:|
+| category | 10 |
+| supplier | 10 |
+| warehouse | 10 |
+| product | 10 |
+| inventory | 10 |
+
+**Example inventory records**
+
+| SKU | Product | Warehouse | Quantity | Reorder level |
+|---|---|---|---:|---:|
+| SKU001 | Wireless Mouse | Central Warehouse | 40 | 10 |
+| SKU002 | Organic Rice 5kg | North Storage | 75 | 20 |
+| SKU003 | Electric Kettle | South Storage | 18 | 5 |
+| SKU004 | Notebook Pack | East Distribution | 120 | 25 |
+| SKU005 | Office Chair | West Distribution | 12 | 4 |
+
+*Expected values are taken from the included seed script. Results will differ if you modify the sample data.*
