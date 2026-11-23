@@ -8,7 +8,7 @@ Build an electricity bill calculator using consumption slabs, customer category,
 ## Files
 - src/day11/utilitybilling/UtilityBillingApp.java – complete Java program.
 - sample_runs.md – illustrative run and calculation.
-- boundary_tests.csv – required boundary values 100, 101, 200, 201, 400 and 401.
+- boundary_tests.csv – boundary values 100, 101, 200, 201, 400 and 401.
 - concepts.md – beginner notes on switch expressions, loops, operators and casting.
 
 ## Prerequisites
@@ -36,13 +36,3 @@ These are practice values, not official electricity-board tariffs. The program a
 2. The for loop prints a 12-month sample statement.
 3. The do-while loop accepts meter readings until 0 is entered.
 4. The program prints primitive-casting examples.
-
-## Submission checklist
-- [ ] Compile with JDK 25.
-- [ ] Capture the bill output.
-- [ ] Capture the 12-month statement.
-- [ ] Demonstrate meter readings and enter 0 to stop.
-- [ ] Test all six boundary values in boundary_tests.csv.
-- [ ] Read concepts.md and explain the casting examples.
-
-The code is prepared but has not been compiled on your local JDK installation. Capture actual terminal output after running it.
