@@ -35,81 +35,87 @@ Use MySQL Workbench or the MySQL command-line client. The scripts use InnoDB and
 - The Day 6 sample data is also used by the Day 7 returns/refunds queries and Day 8 inventory-reservation and ranking exercises. Do not create duplicate copies of these tables.
 - Read `expected_results.md` alongside the query output. It describes expected results and key sample values.
 
-## Sample Results – Sales Reports
+## Exact Sample Query Outputs
 
-The following tables show sample result rows for each task using the supplied retail sales dataset.
+The following tables show the result rows produced by the queries in `reports.sql` when they are run against the supplied Day 6 sample data. These are result tables, not descriptions of what a query is expected to return.
 
-### Task 1 – Top Five Products by Revenue
+### Task 1 – Top Five Products by Revenue (Q1)
 
 | SKU | Product Name | Units Sold | Revenue |
 |---|---|---:|---:|
-| SKU001 | Wireless Mouse | 7 | ₹5,593.00 |
-| SKU005 | Office Chair | 1 | ₹5,499.00 |
-| SKU007 | Running Shoes | 2 | ₹4,998.00 |
-| SKU003 | Electric Kettle | 2 | ₹2,598.00 |
-| SKU006 | Cotton T Shirt | 3 | ₹2,097.00 |
+| SKU001 | Wireless Mouse | 7 | 5593.00 |
+| SKU005 | Office Chair | 1 | 5499.00 |
+| SKU007 | Running Shoes | 2 | 4998.00 |
+| SKU003 | Electric Kettle | 2 | 2598.00 |
+| SKU006 | Cotton T Shirt | 3 | 2097.00 |
 
-### Task 2 – Month-wise Sales
+### Task 2 – Month-wise Sales (Q2)
 
-| Month | Completed Orders | Revenue |
+| Sales Month | Completed Orders | Monthly Revenue |
 |---|---:|---:|
-| January 2026 | 3 | ₹4,254.00 |
-| February 2026 | 3 | ₹6,591.00 |
-| March 2026 | 4 | ₹12,991.00 |
-| April 2026 | 1 | ₹2,499.00 |
+| 2026-01 | 3 | 4254.00 |
+| 2026-02 | 3 | 6591.00 |
+| 2026-03 | 4 | 12991.00 |
+| 2026-04 | 1 | 2499.00 |
 
-### Task 3 – Customers with More Than Three Orders
+### Task 3 – Customers with More Than Three Orders (Q3)
 
-| Customer Name | Order Count |
-|---|---:|
-| Aarav Kumar | 5 |
+| Customer ID | Customer Name | Order Count |
+|---:|---|---:|
+| 1 | AARAV KUMAR | 5 |
 
-### Task 4 – Average Basket Value by City
+### Task 4 – Average Basket Value by Customer City (Q4)
 
 | City | Average Basket Value | Number of Orders |
 |---|---:|---:|
-| Salem | ₹5,499.00 | 1 |
-| Madurai | ₹3,097.00 | 1 |
-| Trichy | ₹2,499.00 | 1 |
-| Coimbatore | ₹2,007.50 | 6 |
-| Chennai | ₹1,597.50 | 2 |
+| Salem | 5499.00 | 1 |
+| Madurai | 3097.00 | 1 |
+| Trichy | 2499.00 | 1 |
+| Coimbatore | 2007.50 | 6 |
+| Chennai | 1597.50 | 2 |
 
-### Task 5 – Orders Without Payment
+### Task 5 – Orders Without a Payment Record (Q5)
 
 | Order ID | Customer Details | Order Date | Order Status |
 |---:|---|---|---|
 | 1012 | Vikram N - Chennai | 10-Apr-2026 | PLACED |
 
-### Task 6 – Customers Without Orders
+### Task 6 – Customers Who Have Never Placed an Order (Q6)
 
-| Customer ID | Customer |
+| Customer ID | Customer Label |
 |---:|---|
 | 10 | TARA M (Ooty) |
 
-### Task 7 – Product Category Revenue Share
+### Task 7 – Product Category Revenue Share (Q7)
 
-| Category | Revenue | Revenue Share |
+| Category Name | Category Revenue | Revenue Share (%) |
 |---|---:|---:|
-| Furniture | ₹5,499.00 | 20.88% |
-| Electronics | ₹5,593.00 | 21.24% |
-| Footwear | ₹4,998.00 | 18.98% |
-| Home Appliances | ₹2,598.00 | 9.86% |
-| Clothing | ₹2,097.00 | 7.96% |
-| Grocery | ₹1,996.00 | 7.58% |
-| Sports | ₹1,798.00 | 6.83% |
-| Stationery | ₹960.00 | 3.65% |
-| Personal Care | ₹798.00 | 3.03% |
+| Electronics | 5593.00 | 21.65 |
+| Furniture | 5499.00 | 21.28 |
+| Footwear | 4998.00 | 19.35 |
+| Home Appliances | 2598.00 | 10.06 |
+| Clothing | 2097.00 | 8.12 |
+| Sports | 1798.00 | 6.96 |
+| Grocery | 1497.00 | 5.79 |
+| Stationery | 960.00 | 3.72 |
+| Personal Care | 796.00 | 3.08 |
 
-### Task 8 – Highest-sales Day
+### Task 8 – Calendar Day with the Highest Sales Revenue (Q8)
 
-| Sales Date | Daily Revenue |
+| Sales Day | Daily Revenue |
 |---|---:|
-| 21 March 2026 | ₹5,499.00 |
+| 2026-03-21 | 5499.00 |
 
-### NULL Demonstration – COUNT, SUM and AVG
+### NULL Demonstration – Payment Aggregates
 
-| Total Rows | Non-NULL Values | SUM | AVG |
+| Payment Rows | Rows with Payment Date | Sum of Amounts | Average Amount | Sum with Zero Default |
+|---:|---:|---:|---:|---:|
+| 11 | 11 | 26335.00 | 2394.09 | 26335.00 |
+
+### NULL Demonstration – Explicit NULL Values
+
+| Total Rows | Non-NULL Values | Sum Ignoring NULL | Average Ignoring NULL |
 |---:|---:|---:|---:|
 | 3 | 2 | 40 | 20 |
 
-*These are sample result values based on the SQL files and included seed data. Run `setup.sql`, `seed_data.sql` and `reports.sql` in order to reproduce the results.*
+*To reproduce these outputs, first run the Day 5 `schema.sql` and `seed_data.sql`, then run the Day 6 `setup.sql`, `seed_data.sql` and `reports.sql` in that order. MySQL Workbench may display decimal values with a different number of trailing zeros.*
