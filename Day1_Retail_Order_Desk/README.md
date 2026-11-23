@@ -22,3 +22,9 @@ java -cp src main
 ```
 
 See `notes/notes.md` for complexity, data-structure rationale, and a bubble-sort trace. Benchmark timings vary by system and JVM warm-up; replace the included sample CSV with the provided 50,000-record dataset for the assignment benchmark.
+
+## Illustrative task output
+
+The image below is a **clearly labelled illustrative sample**, not a screenshot captured from an actual local execution. Use it as a visual reference for the expected layout and type of output.
+
+![Task-specific Java output sample](./screenshots/task_outputs_sample.svg)
