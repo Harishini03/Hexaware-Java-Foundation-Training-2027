@@ -25,9 +25,8 @@ Do not create another copy of the shared tables. Run all scripts against the sam
 1. Open `advanced_reports.sql` in MySQL Workbench.
 2. Execute the queries and inspect each result.
 3. Read `join_and_subquery_notes.md` to understand why each join or subquery is used.
-4. Capture your actual query result grids for assignment evidence.
 
 ## Important notes
 - The `NOT IN` condition can behave unexpectedly when its subquery returns NULL. The notes explain the NULL-safe alternative using `NOT EXISTS`.
 - The SQL files contain query examples; execute them after the prerequisites have created and populated the required tables.
-- Expected-result descriptions are guidance, not proof of live execution.
+- Expected-result descriptions are guidance and may vary if you change the sample data.
