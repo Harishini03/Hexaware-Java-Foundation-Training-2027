@@ -34,3 +34,9 @@ Use MySQL Workbench or the MySQL command-line client. The scripts use InnoDB and
 - Run the setup and seed scripts in the same MySQL schema/session environment.
 - The Day 6 sample data is also used by the Day 7 returns/refunds queries and Day 8 inventory-reservation and ranking exercises. Do not create duplicate copies of these tables.
 - Read `expected_results.md` alongside the query output. It describes expected results and key sample values.
+
+## Illustrative task output
+
+The image below is a **clearly labelled illustrative sample**, not a screenshot captured from an actual local execution. Use it as a visual reference for the expected layout and type of output.
+
+![Aggregate sales report sample](./screenshots/sales_reports_sample.svg)
