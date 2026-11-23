@@ -18,3 +18,6 @@
 - Total estimated backlog: **42 story points**
 
 Run a Sprint Planning session using the team's actual capacity; do not assume all 42 points fit in one Sprint.
+
+## Outputs
+See [`output.md`](output.md) for the task output and expected result checks.
