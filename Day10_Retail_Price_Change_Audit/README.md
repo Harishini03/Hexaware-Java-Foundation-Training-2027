@@ -40,15 +40,3 @@ Keep a record of product price changes and prevent a selling price from being lo
 - With InnoDB, a failing row-level trigger causes the failing statement to fail; rows changed by that statement are rolled back as part of statement atomicity.
 
 The SQL is prepared for MySQL 8.4 but has not been run on a local database.
-
-## Sample Output – Trigger Tests
-
-| Test | Expected result |
-|---|---|
-| Valid update for one SKU | One audit row is inserted with old price, new price, database user and timestamp |
-| Valid update for two SKUs | Two audit rows are inserted (one per updated row) |
-| Selling price changed below cost | Update is rejected with SQLSTATE 45000 |
-| Rejected update audit check | No audit row is created for the rejected change |
-| Trigger inspection | Both BEFORE and AFTER triggers appear in information_schema.TRIGGERS |
-
-*Exact prices and timestamps depend on current database records. Run test_evidence.sql and inspect the audit table to obtain actual values.*
