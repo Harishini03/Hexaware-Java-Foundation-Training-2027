@@ -8,7 +8,7 @@
 3. [MoSCoW priorities, Planning Poker estimates and total](estimation-and-prioritisation.md)
 4. [Definition of Ready and Definition of Done](dor-dod.md)
 5. [Jira CSV import file](jira_import.csv)
-6. [Board setup and sample board view](jira-board-guide.md)
+6. [Board setup guide](jira-board-guide.md)
 
 ## Summary
 - 3 epics and 12 user stories
@@ -16,8 +16,5 @@
 - Five stories with Given/When/Then acceptance criteria, including a negative scenario
 - MoSCoW priorities and Fibonacci estimates
 - Total estimated backlog: **42 story points**
-
-## Jira export note
-The CSV is prepared for Jira import and the board guide explains configuration. A genuine Jira screenshot/export can only be produced after importing into an authenticated Jira workspace. The sample board view is a prepared status layout, not a screenshot of a live Jira board.
 
 Run a Sprint Planning session using the team's actual capacity; do not assume all 42 points fit in one Sprint.
