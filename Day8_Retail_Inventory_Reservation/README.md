@@ -12,7 +12,7 @@ Demonstrate how a retail system can reserve stock safely during an order. The st
 |---|---|
 | `reservation.sql` | Stored procedure for stock reservation, row locking, stock validation, COMMIT and rollback-on-error |
 | `rank_report.sql` | Correlated subqueries, CTEs, category ranking, monthly LAG/LEAD analysis and RANK/DENSE_RANK comparison |
-| `acid_explanation.md` | ACID properties, transaction workflow, rollback evidence checklist and explanation of non-transactional table behaviour |
+| `acid_explanation.md` | ACID properties, transaction workflow, rollback behaviour and explanation of non-transactional table behaviour |
 
 ## Prerequisites
 The reservation and reporting scripts use the retail database and sample data prepared in the earlier assignments. Complete these steps first, in the same MySQL database:
@@ -28,9 +28,8 @@ Do not create duplicate copies of the shared tables.
 3. After the expected error, execute the verification SELECT statements to confirm that stock and order data were not partially changed.
 4. Run the successful reservation CALL and inspect the resulting records.
 5. Execute `rank_report.sql`.
-6. Read `acid_explanation.md` and capture your actual before/after values and error output.
+6. Read `acid_explanation.md` to understand the transaction behaviour.
 
 ## Important notes
 - The insufficient-stock error is intentional; it is not a syntax failure. Do not skip the verification queries after it.
 - The procedure relies on InnoDB transactions and `SELECT ... FOR UPDATE`. Run it in a test database, not against live customer or inventory records.
-- Capture actual MySQL Workbench output for submission. The explanation file is a guide and does not claim that your local database has already been executed.
