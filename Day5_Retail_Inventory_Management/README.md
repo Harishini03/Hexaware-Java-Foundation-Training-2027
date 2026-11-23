@@ -16,7 +16,7 @@ Design a relational database for a retailer that previously maintained product, 
 | `normalisation.md` | 1NF, 2NF, 3NF and update/insert/delete anomalies |
 | `operations_and_checks.sql` | UPDATE, DELETE, verification queries and system-database inspection |
 | `failing_inserts.sql` | Four intentional examples of constraint violations |
-| `failing_insert_evidence.md` | Expected errors and instructions for capturing actual MySQL evidence |
+| `failing_insert_evidence.md` | Explains the expected constraint errors |
 
 ## How to run
 Run the scripts in MySQL Workbench or the MySQL command-line client, in this order:
@@ -30,4 +30,3 @@ Run the scripts in MySQL Workbench or the MySQL command-line client, in this ord
 - This folder is the starting point for the retail database used in this assignment.
 - The UPDATE and DELETE examples change sample records. Re-run the schema and seed scripts if you need a fresh copy of the original data.
 - The statements in `failing_inserts.sql` are deliberately invalid. Run them separately, not as part of the normal setup.
-- Error descriptions in the evidence notes explain the expected behaviour; capture your own result grids and error messages from MySQL Workbench for submission.
