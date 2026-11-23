@@ -36,9 +36,3 @@ These are practice values, not official electricity-board tariffs. The program a
 2. The for loop prints a 12-month sample statement.
 3. The do-while loop accepts meter readings until 0 is entered.
 4. The program prints primitive-casting examples.
-
-## Illustrative task output
-
-The image below is a **clearly labelled illustrative sample**, not a screenshot captured from an actual local execution. Use it as a visual reference for the expected layout and type of output.
-
-![Billing calculation and statement sample](./screenshots/billing_sample.svg)
