@@ -30,9 +30,3 @@ Do not create another copy of the shared tables. Run all scripts against the sam
 - The `NOT IN` condition can behave unexpectedly when its subquery returns NULL. The notes explain the NULL-safe alternative using `NOT EXISTS`.
 - The SQL files contain query examples; execute them after the prerequisites have created and populated the required tables.
 - Expected-result descriptions are guidance and may vary if you change the sample data.
-
-## Illustrative task output
-
-The image below is a **clearly labelled illustrative sample**, not a screenshot captured from an actual local execution. Use it as a visual reference for the expected layout and type of output.
-
-![Returns and refunds query sample](./screenshots/returns_subqueries_sample.svg)
