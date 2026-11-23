@@ -33,3 +33,9 @@ Do not create duplicate copies of the shared tables.
 ## Important notes
 - The insufficient-stock error is intentional; it is not a syntax failure. Do not skip the verification queries after it.
 - The procedure relies on InnoDB transactions and `SELECT ... FOR UPDATE`. Run it in a test database, not against live customer or inventory records.
+
+## Illustrative task output
+
+The image below is a **clearly labelled illustrative sample**, not a screenshot captured from an actual local execution. Use it as a visual reference for the expected layout and type of output.
+
+![Reservation and ranking output sample](./screenshots/reservation_ranking_sample.svg)
