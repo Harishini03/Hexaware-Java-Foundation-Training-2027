@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="650" viewBox="0 0 1100 650">
+ <rect width="1100" height="650" fill="#f4f6f8"/><rect x="0" y="0" width="1100" height="48" fill="#263746"/>
+ <circle cx="24" cy="24" r="6" fill="#e66b5b"/><circle cx="44" cy="24" r="6" fill="#e6bd58"/><circle cx="64" cy="24" r="6" fill="#6dbb79"/>
+ <text x="88" y="30" class="bar">MYSQL WORKBENCH · SCHEMA &amp; CONSTRAINTS</text><text x="28" y="82" class="title">DAY 5 · RETAIL INVENTORY MANAGEMENT</text>
+ <rect x="28" y="100" width="1044" height="270" rx="7" fill="#fff" stroke="#cbd3da"/>
+ <rect x="28" y="100" width="1044" height="34" rx="7" fill="#e8edf1"/><text x="46" y="123" class="tab">SQL EDITOR / TASK OUTPUT</text>
+ <text x="350" y="150" class="comment">-- Verify normalized inventory tables</text><text x="350" y="177" class="code">SELECT table_name FROM information_schema.tables</text><text x="350" y="204" class="code">WHERE table_schema = 'retail_inventory';</text><text x="350" y="231" class="code">-- Check product / supplier relationship</text><text x="350" y="258" class="code">SELECT p.product_id, p.product_name, s.supplier_name</text><text x="350" y="285" class="code">FROM product p JOIN supplier s</text><text x="350" y="312" class="code">ON p.supplier_id = s.supplier_id;</text>
+ <rect x="28" y="388" width="1044" height="222" rx="7" fill="#fff" stroke="#cbd3da"/>
+ <rect x="28" y="388" width="1044" height="34" rx="7" fill="#e8edf1"/><text x="46" y="411" class="tab">RESULT GRID / OUTPUT</text>
+ <rect x="36" y="430" width="1028" height="30" fill="#dfe8ef"/>
+ <text x="44" y="444" class="head">table_name</text><text x="340" y="444" class="head">product</text><text x="650" y="444" class="head">supplier</text><text x="44" y="471" class="cell">warehouse</text><text x="340" y="471" class="cell">inventory</text><text x="650" y="471" class="cell">product_id</text><text x="44" y="498" class="cell">product_name</text><text x="340" y="498" class="cell">supplier_id</text><text x="650" y="498" class="cell">supplier_name</text>
+ <rect x="824" y="68" width="248" height="26" rx="13" fill="#fff1d6" stroke="#d6a94e"/>
+ <text x="948" y="86" text-anchor="middle" class="sample">ILLUSTRATIVE SAMPLE · NOT EXECUTED</text>
+ <text x="28" y="635" class="foot">Training reference only · Values shown are illustrative and are not a captured local execution result.</text>
+ <style>
+ .bar{font:600 13px Arial,sans-serif;fill:#fff;letter-spacing:.5px}.title{font:700 22px Arial,sans-serif;fill:#253746}
+ .tab{font:600 12px Arial,sans-serif;fill:#405363;letter-spacing:.6px}.comment{font:14px Consolas,monospace;fill:#3b7d55}
+ .code{font:14px Consolas,monospace;fill:#263746}.head{font:600 13px Arial,sans-serif;fill:#263746}
+ .cell{font:13px Consolas,monospace;fill:#34495a}.sample{font:700 11px Arial,sans-serif;fill:#865d12}
+ .foot{font:11px Arial,sans-serif;fill:#697783}
+ </style></svg>
