@@ -18,3 +18,9 @@
 - Total estimated backlog: **42 story points**
 
 Run a Sprint Planning session using the team's actual capacity; do not assume all 42 points fit in one Sprint.
+
+## Illustrative task output
+
+The image below is a **clearly labelled illustrative sample**, not a screenshot captured from an actual local execution. Use it as a visual reference for the expected layout and type of output.
+
+![Agile backlog sample](./screenshots/agile_backlog_sample.svg)
