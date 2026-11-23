@@ -37,18 +37,79 @@ Use MySQL Workbench or the MySQL command-line client. The scripts use InnoDB and
 
 ## Sample Results – Sales Reports
 
-The following table shows sample result values from the supplied retail sales dataset:
+The following tables show sample result rows for each task using the supplied retail sales dataset.
 
-| Report | Sample result |
-|---|---|
-| Top five products by revenue | SKU001: ₹5,593.00; SKU005: ₹5,499.00; SKU007: ₹4,998.00; SKU003: ₹2,598.00; SKU006: ₹2,097.00 |
-| Monthly revenue – Jan 2026 | ₹4,254.00 |
-| Monthly revenue – Feb 2026 | ₹6,591.00 |
-| Monthly revenue – Mar 2026 | ₹12,991.00 |
-| Monthly revenue – Apr 2026 | ₹2,499.00 |
-| Customers with more than 3 orders | Aarav Kumar – 5 orders |
-| Order without payment | Order 1012 |
-| Customer without orders | Tara M (customer 10) |
-| Highest-sales day | 21 March 2026 – ₹5,499.00 |
+### Task 1 – Top Five Products by Revenue
 
-*Sample values are provided to illustrate the report output. See expected_results.md for query descriptions and NULL-handling examples.*
+| SKU | Product Name | Units Sold | Revenue |
+|---|---|---:|---:|
+| SKU001 | Wireless Mouse | 7 | ₹5,593.00 |
+| SKU005 | Office Chair | 1 | ₹5,499.00 |
+| SKU007 | Running Shoes | 2 | ₹4,998.00 |
+| SKU003 | Electric Kettle | 2 | ₹2,598.00 |
+| SKU006 | Cotton T Shirt | 3 | ₹2,097.00 |
+
+### Task 2 – Month-wise Sales
+
+| Month | Completed Orders | Revenue |
+|---|---:|---:|
+| January 2026 | 3 | ₹4,254.00 |
+| February 2026 | 3 | ₹6,591.00 |
+| March 2026 | 4 | ₹12,991.00 |
+| April 2026 | 1 | ₹2,499.00 |
+
+### Task 3 – Customers with More Than Three Orders
+
+| Customer Name | Order Count |
+|---|---:|
+| Aarav Kumar | 5 |
+
+### Task 4 – Average Basket Value by City
+
+| City | Average Basket Value | Number of Orders |
+|---|---:|---:|
+| Salem | ₹5,499.00 | 1 |
+| Madurai | ₹3,097.00 | 1 |
+| Trichy | ₹2,499.00 | 1 |
+| Coimbatore | ₹2,007.50 | 6 |
+| Chennai | ₹1,597.50 | 2 |
+
+### Task 5 – Orders Without Payment
+
+| Order ID | Customer Details | Order Date | Order Status |
+|---:|---|---|---|
+| 1012 | Vikram N - Chennai | 10-Apr-2026 | PLACED |
+
+### Task 6 – Customers Without Orders
+
+| Customer ID | Customer |
+|---:|---|
+| 10 | TARA M (Ooty) |
+
+### Task 7 – Product Category Revenue Share
+
+| Category | Revenue | Revenue Share |
+|---|---:|---:|
+| Furniture | ₹5,499.00 | 20.88% |
+| Electronics | ₹5,593.00 | 21.24% |
+| Footwear | ₹4,998.00 | 18.98% |
+| Home Appliances | ₹2,598.00 | 9.86% |
+| Clothing | ₹2,097.00 | 7.96% |
+| Grocery | ₹1,996.00 | 7.58% |
+| Sports | ₹1,798.00 | 6.83% |
+| Stationery | ₹960.00 | 3.65% |
+| Personal Care | ₹798.00 | 3.03% |
+
+### Task 8 – Highest-sales Day
+
+| Sales Date | Daily Revenue |
+|---|---:|
+| 21 March 2026 | ₹5,499.00 |
+
+### NULL Demonstration – COUNT, SUM and AVG
+
+| Total Rows | Non-NULL Values | SUM | AVG |
+|---:|---:|---:|---:|
+| 3 | 2 | 40 | 20 |
+
+*These are sample result values based on the SQL files and included seed data. Run `setup.sql`, `seed_data.sql` and `reports.sql` in order to reproduce the results.*
