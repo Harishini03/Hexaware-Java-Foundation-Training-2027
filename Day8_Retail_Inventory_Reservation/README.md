@@ -33,3 +33,6 @@ Do not create duplicate copies of the shared tables.
 ## Important notes
 - The insufficient-stock error is intentional; it is not a syntax failure. Do not skip the verification queries after it.
 - The procedure relies on InnoDB transactions and `SELECT ... FOR UPDATE`. Run it in a test database, not against live customer or inventory records.
+
+## Outputs
+See [`output.md`](output.md) for the task output and expected result checks.
