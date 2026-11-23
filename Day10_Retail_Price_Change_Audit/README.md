@@ -40,3 +40,9 @@ Keep a record of product price changes and prevent a selling price from being lo
 - With InnoDB, a failing row-level trigger causes the failing statement to fail; rows changed by that statement are rolled back as part of statement atomicity.
 
 The SQL is prepared for MySQL 8.4 but has not been run on a local database.
+
+## Illustrative task output
+
+The image below is a **clearly labelled illustrative sample**, not a screenshot captured from an actual local execution. Use it as a visual reference for the expected layout and type of output.
+
+![Trigger audit output sample](./screenshots/price_audit_sample.svg)
