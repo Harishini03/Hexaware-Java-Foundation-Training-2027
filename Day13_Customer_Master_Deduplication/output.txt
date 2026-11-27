@@ -1,0 +1,33 @@
+CUSTOMER MASTER – DUPLICATE REMOVAL
+Input records : 4
+Unique records: 3
+Customer{name='Asha Kumar', email='asha@mail.com', phone='9876543210'}
+Customer{name='Bala Raj', email='bala@mail.com', phone='9123456780'}
+Customer{name='Charan', email='charan@mail.com', phone='9988776655'}
+
+RECORD VALUE OBJECT
+CustomerRecord[name=Divya Rao, email=divya@mail.com, phone=9000012345]
+Record accessors: Divya Rao | divya@mail.com
+
+STRING CLEANING
+Original: [  Asha   Kumar  ]
+Cleaned : [Asha Kumar]
+First name: Asha
+Masked phone: ******3210
+
+STRING CONSTANT POOL
+first == second: true
+first == third : false
+first.equals(third): true
+Original after concat: hello
+New string: hello world
+
+NOTIFIERS
+Notification service is ready.
+EMAIL to asha@mail.com: Welcome
+SMS to 9876543210: Your profile is updated
+
+FUNCTIONAL INTERFACE VALIDATION: true
+Marker interface Auditable: identifies objects that may be audited.
+
+Note: HashSet iteration order is not guaranteed, so the order of the three customer lines can differ. This file shows representative output.
