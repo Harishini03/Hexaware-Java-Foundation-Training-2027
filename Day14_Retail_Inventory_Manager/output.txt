@@ -1,0 +1,56 @@
+INVENTORY – HASHMAP LOOKUP
+SKU103   Office Chair           Furniture        8
+
+LOW STOCK (below 15)
+SKU105   Web Camera              Electronics      6
+SKU103   Office Chair            Furniture        8
+SKU108   Pen Set                 Stationery       9
+SKU109   Desk Lamp               Furniture       14
+
+COMPARABLE ORDER: CATEGORY, STOCK DESCENDING, NAME
+SKU101   Wireless Mouse          Accessories     35
+SKU102   USB Keyboard             Accessories     25
+SKU106   Monitor                  Electronics     22
+SKU105   Web Camera               Electronics      6
+SKU104   Study Table              Furniture       18
+SKU109   Desk Lamp                Furniture       14
+SKU103   Office Chair             Furniture        8
+SKU107   Notebook                 Stationery      70
+SKU108   Pen Set                  Stationery       9
+
+COMPARATOR ORDER: PRODUCT NAME
+Desk Lamp
+Monitor
+Notebook
+Office Chair
+Pen Set
+Study Table
+USB Keyboard
+Web Camera
+Wireless Mouse
+
+RECENT STOCK ACTIVITY (MAXIMUM 10)
+Added SKU101
+Added SKU102
+Added SKU103
+Added SKU104
+Added SKU105
+Added SKU106
+Added SKU107
+Added SKU108
+Added SKU109
+Added SKU110
+Updated SKU102 stock to 25
+Removed SKU110
+
+GENERIC REPOSITORY
+Product found: SKU201  Travel Adapter        Accessories    16
+Supplier found: SUP01 - Metro Supplies
+
+WRAPPER CLASS DEMONSTRATION
+Autoboxed and unboxed value: 100
+100 references using == : true
+1000 references using ==: false
+1000 values using equals(): true
+
+Note: HashMap iteration order is unspecified. The low-stock and product ordering sections are sorted explicitly. Integer reference identity for values outside the cache is not a value-comparison technique; use equals().
