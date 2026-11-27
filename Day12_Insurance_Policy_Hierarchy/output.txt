@@ -1,0 +1,25 @@
+INSURANCE POLICY PREMIUM REPORT
+Policy No  Policy Type    Status     Premium
+POL-1001   MotorPolicy    ACTIVE     Rs.  16200.00
+POL-1002   HealthPolicy   ACTIVE     Rs.   6380.00
+POL-1003   TravelPolicy   DRAFT      Rs.   1850.00
+POL-1004   MotorPolicy    LAPSED     Rs.  22450.00
+POL-1005   HealthPolicy   ACTIVE     Rs.   7570.00
+POL-1006   TravelPolicy   CANCELLED  Rs.   1225.00
+POL-1007   HomePolicy     ACTIVE     Rs.  19800.00
+POL-1008   HomePolicy     DRAFT      Rs.  14600.00
+
+MONTHLY COLLECTION BY REGION
+North    Rs. 39700.00
+South    Rs. 31500.00
+West     Rs. 46600.00
+
+COLLECTION BY REGION WITH DIFFERENT BRANCH COUNTS
+North: branches=2, total=Rs. 11200.00
+South: branches=3, total=Rs. 21200.00
+West: branches=4, total=Rs. 19800.00
+
+OCP: HomePolicy was added as a new Policy subclass.
+The existing MotorPolicy, HealthPolicy and TravelPolicy classes remain unchanged.
+
+Note: Output is the expected result for the supplied sample data; execute the program to generate your local console output.
